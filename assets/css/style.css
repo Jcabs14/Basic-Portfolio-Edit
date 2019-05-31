@@ -1,0 +1,285 @@
+body{
+  margin:0;
+}
+
+/* set font family for all pages */
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px 10px;
+    border-bottom: 4px solid #cccccc;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+  }
+  
+  
+  /* Style the logo*/
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    background-size: auto;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: #000000;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #5500FF;
+    color: #ffffff;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Border for section 1 */
+  .section1{
+      border:2px solid #dddddd;
+      padding: 20px 20px 20px 20px;
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #ffffff;
+
+      
+  }
+
+  /* about me styling */
+  .about{
+      color: #4aaaa5;
+      border-bottom: 2px solid #cccccc;
+      border-spacing: 20px;
+      
+  }
+
+  /* change img1 size */
+  .img1{width: 200px; 
+    height: 200px;
+    padding: 0 20px 20px 0;
+    float:left;
+  }
+
+  /* footer styling (make it sticky) */
+  .footer{
+   border-top: 8px solid #4aaaa5;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color: #666666;
+  }
+
+  /* Background img class for all pages */
+  .background
+  {
+    background-image: url("../images/dark-paths.png");
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+
+  /*Start of CSS for CONTACT PAGE*/
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=email], select, textarea{
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    width:100%;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    background-color: #ffffff;
+    width: 600px;
+    margin: 0 auto;
+    margin-top:60px;
+    padding:20px;
+    position:relative;
+  }
+
+  /*styling for header in contact page */
+  #contactHeader{
+      color:#4aaaa5;
+      padding: 12px 20px;
+      border-bottom: 2px solid #666666;
+  }
+
+  /*START OF PORTFOLIO STYLING */
+
+  /*Styling for grid */
+
+  .grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    grid-template: 150px 150px 150px/ auto auto auto;
+    padding: 10px;
+    margin-top:20px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #000000;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /*(1,1) of grid */
+  .grid-item1
+  {
+    background-image:url("https://picsum.photos/id/237/350/150");
+    background-repeat: round;
+    border: 1px solid #000000;
+    font-size: 30px;
+    color:#ffffff;
+    text-align: center;
+    position: relative;
+  }
+
+  /* div inside grid item*/
+  .inside1{
+    background-color: #00FFFF;
+    width:100%;
+    bottom:0;
+    position: absolute;
+  }
+  
+    /*(1,2) of grid */
+  .grid-item2
+  {
+    background-image:url("https://picsum.photos/id/238/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+
+    /*(1,3) of grid */
+  .grid-item3
+  {
+    background-image:url("https://picsum.photos/id/239/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    position: relative;
+  }
+  .grid-item4
+  {
+    background-image:url("https://picsum.photos/id/240/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  .grid-item5
+  {
+    background-image:url("https://picsum.photos/id/241/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  .grid-item6
+  {
+    background-image:url("https://picsum.photos/id/242/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  .grid-item7
+  {
+    background-image:url("https://picsum.photos/id/243/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  .grid-item8
+  {
+    background-image:url("https://picsum.photos/id/244/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  .grid-item9
+  {
+    background-image:url("https://picsum.photos/id/1020/350/150");
+    background-repeat: round;
+    border: 2px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+
+  .grid-container a
+  {
+    text-decoration: none;
+
+  }
